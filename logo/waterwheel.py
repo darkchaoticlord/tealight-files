@@ -2,7 +2,7 @@ from tealight.logo import move, turn
 
 
 def square(side):
-  for i in range(0,6):
+  for i in range(0,3):
     move(side)
     turn(60)
 
