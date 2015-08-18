@@ -5,5 +5,6 @@ def square(edges, size):
   for i in range(0, edges):
     move(size)
     turn(angle)
-    
-square(4,25)
+
+for i in range(0,8):    
+  square(4,25)
