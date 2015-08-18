@@ -10,4 +10,4 @@ from tealight.robot import (move,
 while touch() != None:
   move()
 if right_side() == 'fruit':
-  turn(90)
+  turn(1)
