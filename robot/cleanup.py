@@ -12,6 +12,6 @@ while True:
     print n
     while look() == 'fruit' or left_side() == 'fruit' or right_side == 'fruit':
       move()
-    turn(1)
+    turn(n)
     move()
-    turn(1)
+    turn(n)
