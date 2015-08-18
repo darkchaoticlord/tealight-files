@@ -9,11 +9,11 @@ def segment(scale, detail):
   else:
     segment(scale / 4.0, detail - 1)
     turn(60)
-    segment(scale / 3.0, detail - 1)
+    segment(scale / 4.0, detail - 1)
     turn(60)
-    segment(scale / 3.0, detail - 1)
+    segment(scale / 4.0, detail - 1)
     turn(60)
-    segment(scale / 3.0, detail - 1)
+    segment(scale / 4.0, detail - 1)
     
 
 turn(90)
