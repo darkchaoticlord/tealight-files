@@ -16,3 +16,4 @@ def segment(scale, detail):
     segment(scale / 3.0, detail - 1)
     
 
+segment(600,6)
