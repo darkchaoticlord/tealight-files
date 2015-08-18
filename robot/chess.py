@@ -9,3 +9,5 @@ from tealight.robot import (move,
 # Add your code here
 while touch() != None:
   move()
+if right_side() == 'fruit':
+  turn(90)
