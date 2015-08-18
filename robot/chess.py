@@ -18,3 +18,5 @@ for x in range(1,8):
       turn(1)
       while touch() == 'fruit':
         move()
+  if (x%2 == 0) and (left_side() == 'fruit'):
+    turn(-1)
