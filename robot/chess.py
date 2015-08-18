@@ -32,6 +32,6 @@ for y in range(0,2):
   for x in range(0,31):
     move()
   turn(-1)
-  for x in range(0,31):
+  for x in range(0,32):
     move()
   turn(-1)
