@@ -2,6 +2,14 @@ from tealight.logo import move, turn
 
 # Draws the von Koch Snowflake curve
 
+def triangle(size):
+  angle = 360.0 / 4
+  for i in range(0, 4):
+    move(size)
+    turn(angle)
+    
+triangle(200)
+
 def segment(scale, detail):
   
   if detail == 0:
