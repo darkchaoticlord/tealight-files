@@ -28,7 +28,7 @@ for x in range(1,9):
         move()
 turn(-1)
 
-for y in range(0,3):
+for y in range(0,4):
   for x in range(0,31):
     move()
   turn(-1)
