@@ -11,3 +11,7 @@ while touch() != None:
   move()
 if right_side() == 'fruit':
   turn(1)
+  while right_side() != 'fruit':
+    move()
+  else:
+    turn(1)
