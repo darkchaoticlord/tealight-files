@@ -16,5 +16,5 @@ for x in range(1,8):
       move()
     else:
       turn(1)
-      while touch == 'fruit':
+      while touch() == 'fruit':
         move()
