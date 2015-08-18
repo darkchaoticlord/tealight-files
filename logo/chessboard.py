@@ -10,4 +10,7 @@ for x in range(0,8):
   for y in range(0,8):    
      square(4,25)
      move(25)
-  turn(-180)
+  move(-200)
+  turn(90)
+  move(25)
+  turn(-90)
