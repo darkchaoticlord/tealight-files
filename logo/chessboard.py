@@ -8,3 +8,4 @@ def square(edges, size):
 
 for i in range(0,8):    
    square(4,25)
+   move(25)
