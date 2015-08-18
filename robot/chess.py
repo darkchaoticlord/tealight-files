@@ -28,15 +28,16 @@ for x in range(1,9):
         move()
 turn(-1)
 
-
-for x in range(0,31):
-  move()
-turn(-1)
-for x in range(0,4):
-  move()
-turn(-1)
-for x in range(0,31):
-  move()
-turn(1)
-for x in range(0,4):
-  move()
+for y in range(0,3):
+  for x in range(0,31):
+    move()
+  turn(-1)
+  for x in range(0,4):
+    move()
+  turn(-1)
+  for x in range(0,31):
+    move()
+  turn(1)
+  for x in range(0,4):
+    move()
+  turn(1)
