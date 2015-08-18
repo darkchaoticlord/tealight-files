@@ -3,6 +3,7 @@ from tealight.logo import move, turn
 # Draws the von Koch Snowflake curve
 
 def triangle(size):
+  turn(90)
   angle = 360.0 / 3
   for i in range(0, 3):
     move(size)
