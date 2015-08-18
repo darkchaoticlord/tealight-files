@@ -26,3 +26,5 @@ for x in range(1,9):
       turn(-1)
       while touch() == 'fruit':
         move()
+turn(-1)
+move(32)
