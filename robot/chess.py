@@ -7,9 +7,9 @@ from tealight.robot import (move,
                             right_side)
 
 # Add your code here
-for x in range(0,8):
-  while touch() != None:
-    move()
+while touch() == 'fruit':
+  move()
+for x in range(1,8):  
   if (x%2 != 0) and (right_side() == 'fruit'):
     turn(1)
     while right_side() != 'fruit':
