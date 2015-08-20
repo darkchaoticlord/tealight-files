@@ -18,7 +18,7 @@ def handle_mousedown(x,y):
   lasty = y
 
 
-def handle_mousedown(x,y,b):
+def handle_mousedown(x,y,button):
   if (x < (len(palette)*25) and x > 10) and ((y > 35) and (y < 60)):    
     chosen_colour = palette[int(floor((x-10)/25))]
     
