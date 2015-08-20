@@ -6,6 +6,8 @@ def square(edges, size):
     move(size)
     turn(angle)
 
+def fill_in(
+
 for x in range(0,8):
   for y in range(0,8):    
      square(4,25)
@@ -14,3 +16,4 @@ for x in range(0,8):
   turn(90)
   move(25)
   turn(-90)
+  
