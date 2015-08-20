@@ -11,11 +11,13 @@ palette = ["red", "blue", "green", "purple", "yellow", "black", "pink", "grey"]
 
 global chosen_color
 chosen_color = "red"
-
-def initialPlayer1():
+def reset():
   color("white")
   box(0, 0, screen_width, screen_height)
   color("black")
+
+def initialPlayer1():
+  reset()
   drawToolbar()
   text(10,10, "Colour Palette:")
   for i in range(0,8):
@@ -59,6 +61,10 @@ def handle_mousemove(x,y,button):
     lasty = y
     
 def handle_message(message):
+  if message["type"] == "stop":    
+    reset()
+    correctButtons()
+    
   if message["type"] == "line":    
     color(message["color"])
     line(message["x1"], message["y1"], message["x2"], message["y2"])
