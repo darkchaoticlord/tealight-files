@@ -3,6 +3,7 @@ from tealight.art import text,box,color, background, screen_width, screen_height
 
 startTime = now()
 i=0
+stopCount = "false"
 global points
 points = 31
 
