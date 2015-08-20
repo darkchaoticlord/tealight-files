@@ -6,7 +6,10 @@ from github.amyble.art.word import *
 from tealight.net import connect, send
 
 connect("pictionary")
-def colour_palette():
+
+palette = ["red", "blue", "green", "purple", "yellow", "black", "pink", "grey"] 
+
+def initial():
   global chosen_color
   color("white")
   box(0, 0, screen_width, screen_height)
@@ -21,12 +24,16 @@ def colour_palette():
   
 #if (x < (len(palette)*25) and x > 10) and ((y > 35) and (y < 60)):    
 #    chosen_colour = palette[int(floor((x-10)/25))]  
+ 
+  
   
 def getChosen(startX,startY,currentX,currentY,length):
   if (currentX < (length*25) and currentX > startX) and ((currentY > startY) and (currentY < (startY+25))):    
     return int(floor((currentX-startX)/25))
   else:
     return "no"
+  
+  
   
 def handle_mousedown(x,y,button):
   # Check if clicking a colour on toolbar
@@ -38,21 +45,18 @@ def handle_mousedown(x,y,button):
   global lastx, lasty
   lastx = x
   lasty = y
+
+
   
 def handle_mousemove(x,y,button):
   global lastx, lasty
   if button == "left":
-
     color(chosen_color)
     line(lastx, lasty, x, y)
     send({"type": "line","x1": lastx, "y1": lasty, "x2": x, "y2": y,"color":chosen_color})
     lastx = x
     lasty = y
     
-palette = ["red", "blue", "green", "purple", "yellow", "black", "pink", "grey"] 
-
-colour_palette()
-
 def handle_message(message):
   if message["type"] == "line":    
     color(message["color"])
