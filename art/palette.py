@@ -2,7 +2,7 @@ from tealight.art import (color, line, spot, circle, box, image, text, backgroun
 from math import floor
 from tealight.art import (screen_width, screen_height)
 from github.amyble.art.toolbar import *
-
+from github.amyble.art.word import *
 
 def colour_palette():
   global chosen_color
