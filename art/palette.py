@@ -3,7 +3,9 @@ from math import floor
 from tealight.art import (screen_width, screen_height)
 from github.amyble.art.toolbar import *
 from github.amyble.art.word import *
+from tealight.net import connect, send
 
+connect("pictionary")
 def colour_palette():
   global chosen_color
   color("white")
