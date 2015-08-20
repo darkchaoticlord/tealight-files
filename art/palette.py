@@ -62,8 +62,10 @@ def handle_mousemove(x,y,button):
     lasty = y
     
 def handle_message(message):
+  global stopCount
   if message["type"] == "stop":    
     reset()
+    stopCount = "true"
     finishButtons()
     
   if message["type"] == "line":    
