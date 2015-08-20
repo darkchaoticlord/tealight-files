@@ -10,3 +10,6 @@ def colour_palette():
 
 palette = ["red", "blue", "green", "purple", "yellow", "black", "pink", "grey"] 
 colour_palette()
+
+def colour_choose(x,y):
+  
