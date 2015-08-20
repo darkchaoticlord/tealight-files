@@ -3,7 +3,7 @@ from tealight.art import (color, line, spot, circle, box, image, text, backgroun
 from tealight.art import (screen_width, screen_height)
 
 def colour_palette():
-  colour("red")
+  color("red")
   box(10, 10, 25, 25)
   
 colour_palette()
