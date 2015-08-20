@@ -43,4 +43,5 @@ def handle_mousemove(x,y,button):
     lasty = y
     
 palette = ["red", "blue", "green", "purple", "yellow", "black", "pink", "grey"] 
-#colour_palette()
+
+colour_palette()
