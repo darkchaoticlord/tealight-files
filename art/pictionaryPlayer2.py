@@ -35,6 +35,9 @@ def getChosen(startX,startY,currentX,currentY,length):
   
 
 def handle_message(message):
+  if message["type"] == "reset":
+    initialPlayer2()
+  
   if message["type"] == "line":    
     color(message["color"])
     line(message["x1"], message["y1"], message["x2"], message["y2"])
