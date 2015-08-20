@@ -12,8 +12,7 @@ palette = ["red", "blue", "green", "purple", "yellow", "black", "pink", "grey"]
 global chosen_color
 chosen_color = "red"
 
-def initial():
-
+def initialPlayer1():
   color("white")
   box(0, 0, screen_width, screen_height)
   color("black")
