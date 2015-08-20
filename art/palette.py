@@ -5,7 +5,7 @@ from tealight.art import (screen_width, screen_height)
 
 
 def colour_palette():
-  chosen_color = "white"
+  color("white")
   box(0, 0, screen_width, screen_height)
   chosen_color = "red"
   text(10,10, "Colour Palette:")
