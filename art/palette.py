@@ -64,7 +64,7 @@ def handle_mousemove(x,y,button):
 def handle_message(message):
   if message["type"] == "stop":    
     reset()
-    correctButtons()
+    finishButtons()
     
   if message["type"] == "line":    
     color(message["color"])
