@@ -3,6 +3,7 @@ from math import floor
 from tealight.art import (screen_width, screen_height)
 from github.amyble.art.toolbar import *
 from github.amyble.art.word import *
+from github.amyble.art.correct import *
 from tealight.net import connect, send
 
 connect("pictionary")
