@@ -29,7 +29,7 @@ def getChosen(startX,startY,currentX,currentY,length):
   
   
   
-def handle_mousedown(x,y,button):
+#def handle_mousedown(x,y,button):
 
 
   
