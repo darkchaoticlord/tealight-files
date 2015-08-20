@@ -8,7 +8,7 @@ color("black")
 startTime = now()
 i=0
 global points
-points = 300
+points = 30
 
 def doSecond(): 
   global points
