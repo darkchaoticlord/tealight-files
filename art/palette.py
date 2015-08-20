@@ -23,7 +23,7 @@ def handle_mousedown(x,y,button):
     chosen_colour = palette[int(floor((x-10)/25))]
     
   if button == "left":
-    global lastx, lasty
+    global lastx, lasty, chosen_colour
     color(chosen_colour)
     line(lastx, lasty, x, y)
     lastx = x
