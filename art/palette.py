@@ -3,8 +3,11 @@ from math import floor
 from tealight.art import (screen_width, screen_height)
 
 
-chosen_color = "red"
+
 def colour_palette():
+  chosen_color = "white"
+  box(0, 0, screen_width, screen_height)
+  chosen_color = "red"
   text(10,10, "Colour Palette:")
   for i in range(0,8):
     color(palette[i])
@@ -40,4 +43,4 @@ def handle_mousemove(x,y,button):
     lasty = y
     
 palette = ["red", "blue", "green", "purple", "yellow", "black", "pink", "grey"] 
-colour_palette()
+#colour_palette()
