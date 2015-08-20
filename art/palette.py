@@ -9,12 +9,7 @@ def colour_palette():
   for i in range(0,8):
     color(palette[i])
     box((i * 25 + 10), 35, 25, 25)
-    
-def handle_mousedown(x,y):
-  global lastx, lasty
-  
-  lastx = x
-  lasty = y
+
   
 #if (x < (len(palette)*25) and x > 10) and ((y > 35) and (y < 60)):    
 #    chosen_colour = palette[int(floor((x-10)/25))]  
@@ -25,6 +20,9 @@ def getChosen(startX,startY,currentX,currentY,length):
   return 0
   
 def handle_mousedown(x,y,button):
+  global lastx, lasty
+  lastx = x
+  lasty = y
   global chosen_color
   if getChosen(10,35,x,y,len(palette)):
     chosen_color = palette[getChosen(10,35,x,y,len(palette))]
