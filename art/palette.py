@@ -14,5 +14,5 @@ colour_palette()
 #def colour_choose(x,y):
 
 def handle_mousedown(x,y,b):
-  if (x < (len(palette)*25) and x > 10) and ((y > 35) and (y <60)):    
+  if (x <= (len(palette)*25) and x >= 10) and ((y >= 35) and (y <= 60)):    
     print palette[(int(floor((x-10)/25)))]
