@@ -16,12 +16,17 @@ def handle_mousedown(x,y):
   
   lastx = x
   lasty = y
-
+  
+#if (x < (len(palette)*25) and x > 10) and ((y > 35) and (y < 60)):    
+#    chosen_colour = palette[int(floor((x-10)/25))]  
+  
+def getChosen(startX,startY,currentX,currentY,length):
+  if (x < (length*25) and x > startX) and ((y > startY) and (y < (startY+25))):    
+    chosen_colour = palette[int(floor((x-startX)/25))]
 
 def handle_mousedown(x,y,button):
   global chosen_colour
-  if (x < (len(palette)*25) and x > 10) and ((y > 35) and (y < 60)):    
-    chosen_colour = palette[int(floor((x-10)/25))]
+  chosen_colour = palette[(getChosen(10,35,x,y,len(palette))]
     
   if button == "left":
     global lastx, lasty
