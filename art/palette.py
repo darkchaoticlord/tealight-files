@@ -12,4 +12,4 @@ palette = ["red", "blue", "green", "purple", "yellow", "black", "pink", "grey"]
 colour_palette()
 
 #def colour_choose(x,y):
-print 34//25
+print float(34/25)
