@@ -7,5 +7,5 @@ def colour_palette():
     color(palette[i])
     box((i * 25 + 10), (10), 25, 25)
 
-palette = ["red", "blue", "green", "purple", "yellow", "black", "pink", "grey"] 
+palette = ["red", "blue", "green", "purple", "yellow", "black", "pink", "light blue"] 
 colour_palette()
