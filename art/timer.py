@@ -16,7 +16,7 @@ def doSecond():
   color("white")
   box(0,0,100,100)
   color("black")
-  text(screen_height -10,10,("Points: " + str(points)))
+  text(screen_height - 10,10,("Points: " + str(points)))
 
 def handle_frame():
   global i
