@@ -4,7 +4,7 @@ from tealight.art import (screen_width, screen_height)
 
 lastx = 0
 lasty = 0
-
+chosen_color = "red"
 def colour_palette():
   text(10,10, "Colour Palette:")
   for i in range(0,8):
@@ -29,7 +29,7 @@ def handle_mousedown(x,y,button):
   global chosen_color
   if getChosen(10,35,x,y,len(palette)):
     chosen_color = palette[getChosen(10,35,x,y,len(palette))]
-  #print chosen_color
+  print chosen_color
   
   if button == "left":
     global lastx, lasty
