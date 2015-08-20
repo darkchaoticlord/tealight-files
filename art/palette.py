@@ -21,8 +21,8 @@ def handle_mousedown(x,y):
 #    chosen_colour = palette[int(floor((x-10)/25))]  
   
 def getChosen(startX,startY,currentX,currentY,length):
-  if (x < (length*25) and x > startX) and ((y > startY) and (y < (startY+25))):    
-    chosen_colour = palette[int(floor((x-startX)/25))]
+  if (currentX < (length*25) and currentX > startX) and ((currentY > startY) and (currentY < (startY+25))):    
+    chosen_colour = palette[int(floor((currentX-startX)/25))]
 
 def handle_mousedown(x,y,button):
   global chosen_colour
