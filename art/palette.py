@@ -23,7 +23,7 @@ def handle_mousedown(x,y):
 def getChosen(startX,startY,currentX,currentY,length):
   if (currentX < (length*25) and currentX > startX) and ((currentY > startY) and (currentY < (startY+25))):    
     return int(floor((currentX-startX)/25))
-  return false
+  return 0
   
 def handle_mousedown(x,y,button):
   global chosen_color
