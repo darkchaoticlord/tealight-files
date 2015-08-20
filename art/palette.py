@@ -20,14 +20,17 @@ def getChosen(startX,startY,currentX,currentY,length):
   return 0
   
 def handle_mousedown(x,y,button):
-  global lastx, lasty
-  lastx = x
-  lasty = y
+  # Check if clicking a colour on toolbar
   global chosen_color
   if getChosen(10,35,x,y,len(palette)):
     chosen_color = palette[getChosen(10,35,x,y,len(palette))]
   print chosen_color
   
+  global lastx, lasty
+  lastx = x
+  lasty = y
+  
+def handle_mousemove(x,y,button):  
   if button == "left":
 
     color(chosen_color)
