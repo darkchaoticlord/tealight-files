@@ -12,4 +12,7 @@ palette = ["red", "blue", "green", "purple", "yellow", "black", "pink", "grey"]
 colour_palette()
 
 #def colour_choose(x,y):
-print int(floor(56/25))
+
+def handle_mousedown(x,y,b):
+  if x < (len(palette)*25):    
+    print int(floor(56/25))
