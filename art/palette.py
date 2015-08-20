@@ -3,7 +3,7 @@ from tealight.art import (color, line, spot, circle, box, image, text, backgroun
 from tealight.art import (screen_width, screen_height)
 
 def colour_palette():
-  for i in range(0,7):
+  for i in range(0,8):
     color(palette[i])
     box((i * 25 + 10), (10), 25, 25)
 
