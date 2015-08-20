@@ -5,6 +5,7 @@ from github.amyble.art.toolbar import *
 
 
 def colour_palette():
+  global chosen_color
   color("white")
   box(0, 0, screen_width, screen_height)
   drawToolbar()
