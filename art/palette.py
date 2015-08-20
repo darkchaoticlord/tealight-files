@@ -2,8 +2,7 @@ from tealight.art import (color, line, spot, circle, box, image, text, backgroun
 from math import floor
 from tealight.art import (screen_width, screen_height)
 
-lastx = 0
-lasty = 0
+
 chosen_color = "red"
 def colour_palette():
   text(10,10, "Colour Palette:")
