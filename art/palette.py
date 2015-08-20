@@ -45,7 +45,7 @@ def handle_mousemove(x,y,button):
 
     color(chosen_color)
     line(lastx, lasty, x, y)
-    send({"x1": lastx, "y1": lasty, "x2": x, "y2": y,"color":chosen_color})
+    send({"type": "line","x1": lastx, "y1": lasty, "x2": x, "y2": y,"color":chosen_color})
     lastx = x
     lasty = y
     
@@ -54,6 +54,7 @@ palette = ["red", "blue", "green", "purple", "yellow", "black", "pink", "grey"]
 colour_palette()
 
 def handle_message(message):
-  color(message["color"])
-  line(message["x1"], message["y1"], message["x2"], message["y2"])
+  if message["type"] == "line":    
+    color(message["color"])
+    line(message["x1"], message["y1"], message["x2"], message["y2"])
   
