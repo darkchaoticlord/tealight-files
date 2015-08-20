@@ -9,11 +9,13 @@ connect("pictionary")
 
 palette = ["red", "blue", "green", "purple", "yellow", "black", "pink", "grey"] 
 
+global chosen_color
+chosen_color = "red"
+
 def initial():
-  global chosen_color
+
   color("white")
   box(0, 0, screen_width, screen_height)
-  chosen_color = "red"
   color("black")
   drawToolbar()
   text(10,10, "Colour Palette:")
