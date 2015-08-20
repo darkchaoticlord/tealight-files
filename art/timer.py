@@ -15,8 +15,8 @@ def doSecond():
   text(10,screen_height - 30, ("Points: " + str(points)))
 
 def handle_frame():
-  global i
-  if (i % 60) == 0:
+  global i,stopCount
+  if (i % 60) == 0 and stopCount != "true":
     newTime = now() - startTime
     doSecond()
   
