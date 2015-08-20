@@ -1,5 +1,5 @@
 from tealight.art import (color, line, spot, circle, box, image, text, background)
-#from tealight.math import floor
+from tealight.math import floor
 from tealight.art import (screen_width, screen_height)
 
 def colour_palette():
