@@ -9,4 +9,5 @@ def square(edges, size):
 
 for y in range(0,8):    
    square(4,25)
+   turn(90)
    move(25)
