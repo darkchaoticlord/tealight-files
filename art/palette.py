@@ -7,6 +7,7 @@ from tealight.art import (screen_width, screen_height)
 def colour_palette():
   color("white")
   box(0, 0, screen_width, screen_height)
+  drawToolbar()
   chosen_color = "red"
   color("black")
   text(10,10, "Colour Palette:")
@@ -21,7 +22,8 @@ def colour_palette():
 def getChosen(startX,startY,currentX,currentY,length):
   if (currentX < (length*25) and currentX > startX) and ((currentY > startY) and (currentY < (startY+25))):    
     return int(floor((currentX-startX)/25))
-  return "no"
+  else:
+    return "no"
   
 def handle_mousedown(x,y,button):
   # Check if clicking a colour on toolbar
