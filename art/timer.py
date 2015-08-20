@@ -14,7 +14,7 @@ def doSecond():
   global points
   points = points-1
   color("white")
-  box(0,0,100,100)
+  box(0,0,screen_width,screen_height)
   color("black")
   text(0, (screen_height - 20),("Points: " + str(points)))
 
