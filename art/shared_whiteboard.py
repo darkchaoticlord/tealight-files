@@ -26,4 +26,3 @@ def handle_mousemove(x,y,button):
 def handle_message(message):
   line(message["x1"], message["y1"], message["x2"], message["y2"])
   
-print 30
