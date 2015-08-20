@@ -27,7 +27,7 @@ def getChosen(startX,startY,currentX,currentY,length):
 def handle_mousedown(x,y,button):
   global chosen_color
   chosen_color = palette[getChosen(10,35,x,y,len(palette))]
-    
+  return chosen_color  
   if button == "left":
     global lastx, lasty
     color(chosen_color)
