@@ -8,9 +8,9 @@ def colour_palette():
   global chosen_color
   color("white")
   box(0, 0, screen_width, screen_height)
-  drawToolbar()
   chosen_color = "red"
   color("black")
+  drawToolbar()
   text(10,10, "Colour Palette:")
   for i in range(0,8):
     color(palette[i])
