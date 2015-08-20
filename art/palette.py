@@ -8,6 +8,7 @@ def colour_palette():
   color("white")
   box(0, 0, screen_width, screen_height)
   chosen_color = "red"
+  color("black")
   text(10,10, "Colour Palette:")
   for i in range(0,8):
     color(palette[i])
