@@ -21,7 +21,7 @@ image(200,200,"bird.png")
 
 line(560,0,560,495)
 
-text(600, 100, "Hello Tealight!")
+text(10, 10, "Hello Tealight!")
 
 lastx = None
 lasty = None
