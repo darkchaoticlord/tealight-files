@@ -1,9 +1,6 @@
 from tealight.utils import now
 from tealight.art import text,box,color, background, screen_width, screen_height
 
-color("white")
-box(0,0,screen_width,screen_height)
-color("black")
 
 startTime = now()
 i=0
