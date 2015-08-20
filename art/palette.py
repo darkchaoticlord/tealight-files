@@ -17,12 +17,12 @@ def colour_palette():
 def getChosen(startX,startY,currentX,currentY,length):
   if (currentX < (length*25) and currentX > startX) and ((currentY > startY) and (currentY < (startY+25))):    
     return int(floor((currentX-startX)/25))
-  return 0
+  return "no"
   
 def handle_mousedown(x,y,button):
   # Check if clicking a colour on toolbar
   global chosen_color
-  if getChosen(10,35,x,y,len(palette)):
+  if getChosen(10,35,x,y,len(palette)) != "no":
     chosen_color = palette[getChosen(10,35,x,y,len(palette))]
   print chosen_color
   
