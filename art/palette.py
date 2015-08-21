@@ -65,7 +65,7 @@ def handle_message(message):
   global stopCount
   if message["type"] == "stop":    
     reset()
-    stopCount = True
+    stopCount = "true"
     finishButtons()
     
   if message["type"] == "line":    
