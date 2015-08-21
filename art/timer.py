@@ -17,9 +17,11 @@ def doSecond():
 
 def handle_frame():
   global i,stopCount
-  if (i % 60) == 0 and stopCount != "true":
+  if (i % 60) == 0 and stopCount != True:
     newTime = now() - startTime
     doSecond()
+  if points < 0:
+    points = 0
   
   # Do everything else on framechange
 
