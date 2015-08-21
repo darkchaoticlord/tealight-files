@@ -62,6 +62,8 @@ def handle_mousemove(x,y,button):
     lastx = x
     lasty = y
     
+    
+    
 def handle_message(message):
   global stopCount
   if message["type"] == "stop":    
