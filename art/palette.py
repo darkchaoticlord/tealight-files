@@ -5,7 +5,8 @@ from github.amyble.art.toolbar import *
 from github.amyble.art.word import *
 from github.amyble.art.correct import *
 from tealight.net import connect, send
-
+global stopCount
+stopCount = "false"
 connect("pictionary")
 
 palette = ["red", "blue", "green", "purple", "yellow", "black", "pink", "grey"] 
