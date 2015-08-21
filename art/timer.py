@@ -15,6 +15,8 @@ def doSecond():
   color("black")
   if points < 0:
     points = 0
+  if message["type"] == "stop":
+    player_points = points
   text(10,screen_height - 30, ("Points: " + str(points)))
 
 def handle_frame():
