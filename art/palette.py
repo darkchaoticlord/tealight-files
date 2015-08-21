@@ -59,8 +59,8 @@ def handle_mousedown(x,y,button):
     chosen_color = palette[getChosen(10,35,x,y,len(palette))]
   print chosen_color
   
-  if inBox(10,20,10,20,5,5) == "true":
-    print "yes"
+  if inBox(p2cMinX,p2cMaxX,p2cMinY,p2cMaxY,x,y) == "true":
+    print "p2c"
   
   global lastx, lasty
   lastx = x
