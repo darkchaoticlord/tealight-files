@@ -168,13 +168,13 @@ def handle_mousedown(x,y,button):
    print "p2 correct"
   
  # if inBox(p2wMinX,p2wMaxX,p2wMinY,p2wMaxY,x,y) == "true":
-    print "p2 wrong"
+    #print "p2 wrong"
   
  # if inBox(p3cMinX,p3cMaxX,p3cMinY,p3cMaxY,x,y) == "true":
-    print "p3 correct"
+ #   print "p3 correct"
   
  # if inBox(p3wMinX,p3wMaxX,p3wMinY,p3wMaxY,x,y) == "true":
-    print "player 3 wrong"
+  #  print "player 3 wrong"
    
     
     
