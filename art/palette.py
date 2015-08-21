@@ -1,7 +1,7 @@
 from tealight.art import (color, line, spot, rectangle, circle, box, image, text, background)
 from tealight.art import (screen_width, screen_height)
 
-global fbShown, p2cMinX, p2cMaxX, p2cMinY, p2cMaxY, p2wMinX, p2wMaxX, p2wMinY, p2wMaxY, p3cMinX, p3cMaxX, p3cMinY, p3cMaxY, p3wMinX, p3wMaxX, p3wMinY, p3wMaxY
+global fbShown, chosen_color, p2cMinX, p2cMaxX, p2cMinY, p2cMaxY,p2wMinX,p2wMaxX,p2wMinY,p2wMaxY,p3cMinX,p3cMaxX,p3cMinY,p3cMaxY,p3wMinX,p3wMaxX,p3wMinY,p3wMaxY
 
 fbShown = "false"
 stopMinY = 0
