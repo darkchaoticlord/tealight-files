@@ -6,6 +6,18 @@ from github.amyble.art.word import *
 from github.amyble.art.correct import *
 from tealight.net import connect, send
 global stopCount
+
+
+def inBox(boundXMin,boundXMax,boundYMin,boundYMax,x,y):
+  if ((x > boundXMin) and (x < boundXMax)) and ((y > boundYMin) and (y < boundYMax)):
+    return "true"
+  else:
+    return "false"
+  
+
+
+
+
 stopCount = "false"
 connect("pictionary")
 
