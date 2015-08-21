@@ -158,6 +158,7 @@ def getChosen(startX,startY,currentX,currentY,length):
   
 def handle_mousedown(x,y,button):
   # Check if clicking a colour on toolbar
+  
   global chosen_color, p2cMinX, p2cMaxX, p2cMinY, p2cMaxY,p2wMinX,p2wMaxX,p2wMinY,p2wMaxY,p3cMinX,p3cMaxX,p3cMinY,p3cMaxY,p3wMinX,p3wMaxX,p3wMinY,p3wMaxY
   if getChosen(10,35,x,y,len(palette)) != "no":
     chosen_color = palette[getChosen(10,35,x,y,len(palette))]
@@ -166,13 +167,13 @@ def handle_mousedown(x,y,button):
   if inBox(p2cMinX,p2cMaxX,p2cMinY,p2cMaxY,x,y) == "true":
    print "p2 correct"
   
-  if inBox(p2wMinX,p2wMaxX,p2wMinY,p2wMaxY,x,y) == "true":
+ # if inBox(p2wMinX,p2wMaxX,p2wMinY,p2wMaxY,x,y) == "true":
     print "p2 wrong"
   
-  if inBox(p3cMinX,p3cMaxX,p3cMinY,p3cMaxY,x,y) == "true":
+ # if inBox(p3cMinX,p3cMaxX,p3cMinY,p3cMaxY,x,y) == "true":
     print "p3 correct"
   
-  if inBox(p3wMinX,p3wMaxX,p3wMinY,p3wMaxY,x,y) == "true":
+ # if inBox(p3wMinX,p3wMaxX,p3wMinY,p3wMaxY,x,y) == "true":
     print "player 3 wrong"
    
     
