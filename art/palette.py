@@ -26,7 +26,7 @@ stopButton()
 
 
 def finishButtons():
-  global p2cMinX,p2cMaxX,p2cMinY,p2cMaxY, p2wMinX, p2wMaxX, p2wMinY, p2wMaxY, p3cMinX, p3cMaxX, p3cMinY, p3cMaxY, p3wMinX, p3wMaxX, p3wMinY, p3wMaxY
+  global p2cMinX, p2cMaxX, p2cMinY, p2cMaxY, p2wMinX, p2wMaxX, p2wMinY, p2wMaxY, p3cMinX, p3cMaxX, p3cMinY, p3cMaxY, p3wMinX, p3wMaxX, p3wMinY, p3wMaxY
   color("green")
   #P2 Correct
   rectangle((screen_width / 2) - 75, screen_height / 2, 150,30)
@@ -118,9 +118,6 @@ def inBox(boundXMin,boundXMax,boundYMin,boundYMax,x,y):
   else:
     return "false"
   
-
-
-
 
 stopCount = "false"
 connect("pictionary")
