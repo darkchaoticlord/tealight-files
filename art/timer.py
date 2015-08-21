@@ -13,6 +13,8 @@ def doSecond():
   color("white")
   box(0,screen_height - 100, 100, 100)
   color("black")
+  if points < 0:
+    points = 0
   text(10,screen_height - 30, ("Points: " + str(points)))
 
 def handle_frame():
@@ -20,8 +22,7 @@ def handle_frame():
   if (i % 60) == 0 and stopCount != True:
     newTime = now() - startTime
     doSecond()
-  if points < 0:
-    points = 0
+  
   
   # Do everything else on framechange
 
