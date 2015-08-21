@@ -163,7 +163,6 @@ def handle_mousedown(x,y,button):
   global fbShown, chosen_color, p2cMinX, p2cMaxX, p2cMinY, p2cMaxY,p2wMinX,p2wMaxX,p2wMinY,p2wMaxY
   if getChosen(10,35,x,y,len(palette)) != "no":
     chosen_color = palette[getChosen(10,35,x,y,len(palette))]
-  print chosen_color
   
   if fbShown == "true":
   
