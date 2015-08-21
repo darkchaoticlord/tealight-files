@@ -54,7 +54,7 @@ def getChosen(startX,startY,currentX,currentY,length):
   
 def handle_mousedown(x,y,button):
   # Check if clicking a colour on toolbar
-  global chosen_color,p2cMinX,p2cMaxX,p2cMinY,p2cMaxY
+  global chosen_color, p2cMinX, p2cMaxX, p2cMinY, p2cMaxY
   if getChosen(10,35,x,y,len(palette)) != "no":
     chosen_color = palette[getChosen(10,35,x,y,len(palette))]
   print chosen_color
