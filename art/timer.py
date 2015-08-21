@@ -19,7 +19,7 @@ def doSecond():
 
 def handle_frame():
   global i,stopCount
-  if (i % 60) == 0 and stopCount != True:
+  if (i % 60) == 0 and stopCount != "true":
     newTime = now() - startTime
     doSecond()
   
