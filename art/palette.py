@@ -1,9 +1,9 @@
 from tealight.art import (color, line, spot, rectangle, circle, box, image, text, background)
 from tealight.art import (screen_width, screen_height)
 
-global p2cMinX, p2cMaxX, p2cMinY, p2cMaxY, p2wMinX, p2wMaxX, p2wMinY, p2wMaxY, p3cMinX, p3cMaxX, p3cMinY, p3cMaxY, p3wMinX, p3wMaxX, p3wMinY, p3wMaxY
+global fbShown, p2cMinX, p2cMaxX, p2cMinY, p2cMaxY, p2wMinX, p2wMaxX, p2wMinY, p2wMaxY, p3cMinX, p3cMaxX, p3cMinY, p3cMaxY, p3wMinX, p3wMaxX, p3wMinY, p3wMaxY
 
-
+fbShown = "false"
 stopMinY = 0
 stopMaxY = 0
 stopMinX = 0
@@ -29,8 +29,9 @@ stopButton()
 
 
 def finishButtons():
-  global p2cMinX, p2cMaxX, p2cMinY, p2cMaxY, p2wMinX, p2wMaxX, p2wMinY, p2wMaxY, p3cMinX, p3cMaxX, p3cMinY, p3cMaxY, p3wMinX, p3wMaxX, p3wMinY, p3wMaxY
+  global fbShown,p2cMinX, p2cMaxX, p2cMinY, p2cMaxY, p2wMinX, p2wMaxX, p2wMinY, p2wMaxY, p3cMinX, p3cMaxX, p3cMinY, p3cMaxY, p3wMinX, p3wMaxX, p3wMinY, p3wMaxY
   color("green")
+  
   #P2 Correct
   rectangle((screen_width / 2) - 75, screen_height / 2, 150,30)
   text((screen_width / 2) - 45, ((screen_height / 2) + 5), "P2 Correct")
@@ -65,7 +66,7 @@ def finishButtons():
   p3wMaxX = ((screen_width / 2) + 245) 
   p3wMinY = ((screen_width / 2) + 40)
   p3wMaxY = ((screen_width / 2) + 70)
-
+  fbShown = "true"
 
 
 
@@ -159,22 +160,24 @@ def getChosen(startX,startY,currentX,currentY,length):
 def handle_mousedown(x,y,button):
   # Check if clicking a colour on toolbar
   
-  global chosen_color, p2cMinX, p2cMaxX, p2cMinY, p2cMaxY,p2wMinX,p2wMaxX,p2wMinY,p2wMaxY
+  global fbShown, chosen_color, p2cMinX, p2cMaxX, p2cMinY, p2cMaxY,p2wMinX,p2wMaxX,p2wMinY,p2wMaxY
   if getChosen(10,35,x,y,len(palette)) != "no":
     chosen_color = palette[getChosen(10,35,x,y,len(palette))]
   print chosen_color
   
-  if inBox(p2cMinX,p2cMaxX,p2cMinY,p2cMaxY,x,y) == "true":
-   print "p2 correct"
+  if fbShown == "true":
   
-  if inBox(p2wMinX,p2wMaxX,p2wMinY,p2wMaxY,x,y) == "true":
-    print "p2 wrong"
+    if inBox(p2cMinX,p2cMaxX,p2cMinY,p2cMaxY,x,y) == "true":
+      print "p2 correct"
   
-  if inBox(p3cMinX,p3cMaxX,p3cMinY,p3cMaxY,x,y) == "true":
-    print "p3 correct"
+    if inBox(p2wMinX,p2wMaxX,p2wMinY,p2wMaxY,x,y) == "true":
+      print "p2 wrong"
   
-  if inBox(p3wMinX,p3wMaxX,p3wMinY,p3wMaxY,x,y) == "true":
-    print "player 3 wrong"
+    if inBox(p3cMinX,p3cMaxX,p3cMinY,p3cMaxY,x,y) == "true":
+      print "p3 correct"
+  
+    if inBox(p3wMinX,p3wMaxX,p3wMinY,p3wMaxY,x,y) == "true":
+      print "player 3 wrong"
    
     
     
