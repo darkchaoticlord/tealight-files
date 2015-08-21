@@ -23,7 +23,6 @@ def handle_frame():
     newTime = now() - startTime
     doSecond()
   
-  
   # Do everything else on framechange
 
   i=i+1
